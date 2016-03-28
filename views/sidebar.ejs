@@ -1,0 +1,47 @@
+<!-- BEGIN SIDEBAR -->
+<div class="sidebar col-md-3 col-sm-5"  ng-controller="sideBarController" ng-init="init()">
+    <ul class="list-group margin-bottom-25 sidebar-menu">
+        <li ng-class="amazon"><a href="/amazon"><i class="fa fa-angle-right"></i> amazon</a></li>
+        <li ng-class="sportsauthority"><a href="/sportsauthority"><i class="fa fa-angle-right"></i> sports authority</a></li>
+        <li ng-class="sears"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i> sears</a></li>
+        <li ng-class="target"><a href="/target"><i class="fa fa-angle-right"></i> target</a></li>
+        <li ng-class="nodstrom"><a href="/nodstrom"><i class="fa fa-angle-right"></i> nodstrom</a></li>
+        <li ng-class="walmart"><a href="/walmart"><i class="fa fa-angle-right"></i> walmart</a></li>
+        <li ng-class="dicks"><a href="/dicks"><i class="fa fa-angle-right"></i> dicks sporting goods</a></li>
+        <li ng-class="dell"><a href="/dell"><i class="fa fa-angle-right"></i> dell</a></li>
+        <li ng-class="sams"><a href="/sams"><i class="fa fa-angle-right"></i> sams</a></li>
+    </ul>
+
+    <div class="sidebar-filter margin-bottom-25">
+        <h2>Filter</h2>
+        <h3>Price</h3>
+        <p>
+            <span>$ </span>
+            <input type="text" style="width: 22%; padding: 3px 6px;" ng-model="slidePrice1">
+            <span style="text-transform: lowercase;">to $ </span>
+            <input type="text" style="width: 22%; padding: 3px 6px;" ng-model="slidePrice2">
+            <button type="button" class="btn blue" style="padding: 4px 12px;   margin-left: 10px; margin-top: -3px;" ng-click="slideRange();">Go</button>
+        </p>
+
+        <div class="checkbox-list margin-top-10">
+            <label><input type="radio" name="price-range" ng-model="range[1]" ng-change="fnRange1()" value="price1">0 - $10</label>
+            <label><input type="radio" name="price-range" ng-model="range[2]" ng-change="fnRange2()" value="price2">$10 - $20</label>
+            <label><input type="radio" name="price-range" ng-model="range[3]" ng-change="fnRange3()" value="price3">$20 - $50</label>
+            <label><input type="radio" name="price-range" ng-model="range[4]" ng-change="fnRange4()" value="price4">$50 - $100</label>
+            <label><input type="radio" name="price-range" ng-model="range[5]" ng-change="fnRange5()" value="price5">$100 - $150</label>
+            <label><input type="radio" name="price-range" ng-model="range[6]" ng-change="fnRange6()" value="price6">$150 - $200</label>
+            <label><input type="radio" name="price-range" ng-model="range[7]" ng-change="fnRange7()" value="price7">$200 - $250</label>
+            <div id="more-prices-group" ng-show="menuVisible">
+                <label style="display: block;"><input type="radio" name="price-range" ng-model="range[8]" ng-change="fnRange8()" value="price8">$500 - $750</label>
+                <label style="display: block;"><input type="radio" name="price-range" ng-model="range[9]" ng-change="fnRange9()" value="price9">$750 - $1000</label>
+                <label style="display: block;"><input type="radio" name="price-range" ng-model="range[10]" ng-change="fnRange10()" value="price10">$1250 - $1500</label>
+                <label style="display: block;"><input type="radio" name="price-range" ng-model="range[11]" ng-change="fnRange11()" value="price11">$1500 - $2000</label>
+                <label style="display: block;"><input type="radio" name="price-range" ng-model="range[12]" ng-change="fnRange12()" value="price12">$2000 - $2500</label>
+                <label style="display: block;"><input type="radio" name="price-range" ng-model="range[13]" ng-change="fnRange13()" value="price13">$2500 - $3000</label>
+                <label style="display: block;"><input type="radio" name="price-range" ng-model="range[14]" ng-change="fnRange14()" value="price14">$3000+</label>
+            </div>
+            <label><span class="pointer" ng-click="showMoreMenu()">{{ visibleTxt }}</span>&nbsp;<i class="{{ visibleClass }}"></i></label>
+        </div>
+    </div>
+</div>
+<!-- END SIDEBAR -->

@@ -1,0 +1,106 @@
+a.site-logo img {
+    width: 120px;
+}
+
+div.header-item {
+    display: inline-block;
+    float: left;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.list-item {
+    width: 173px !important;
+    height: 250px;
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+    margin-bottom: 20px !important;
+}
+
+.list-item img {
+    height: 125px !important;
+}
+
+a.item-name {
+    color: #0072bc !important;
+    width: 139px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    height: 56px;
+}
+
+div.overlay {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(102, 102, 102, 0.25);
+    z-index: 100;
+}
+
+div.overlay-child {
+    width: 150px;
+    height: 80px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    bottom: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+div.overlay-child div {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.footer-center {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 25px 0;
+    width: 90%;
+    font-size: 14px;
+}
+
+.footer-center li:first-child {
+    border-left: 0;
+}
+
+.footer-center li {
+    border-left: 1px solid #e3e3e3;
+    display: inline;
+    padding: 0 5px;
+}
+
+.shopping-brand {
+    padding-left: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.shopping-brand li {
+    display: inline;
+    padding: 0 5px;
+}
+
+.shopping-brand li:hover {
+    opacity: 0.5;
+}
+
+ul.sidebar-menu li {
+    background: #fff;
+    padding: 8px 10px 6px;
+    border: none;
+    display: block;
+    margin-bottom: 2px;
+    position: relative;
+}
